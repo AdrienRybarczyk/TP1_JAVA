@@ -3,7 +3,6 @@ public class Livre {
 	private String titre;
 	private String auteur;
 	private int anneePremiereParution;
-	
 	public Livre(String titre, String auteur, int anneePremiereParution) {
 		super();
 		this.titre = titre;
@@ -29,11 +28,19 @@ public class Livre {
 	public void setAnneePremiereParution(int anneePremiereParution) {
 		this.anneePremiereParution = anneePremiereParution;
 	}
-
+        public void affichePersonnages(){
+            //insert code here
+        }
+        public void ajoutPersonnage(Personnage unPersonnage){
+            //insert code here
+        }
+        public boolean contientPersonnage(String nom){
+            //insert code here
+            return true;
+        }
 	@Override
 	public String toString() {
-		return "Livre [titre=" + titre + ", auteur=" + auteur + ", anneePremiereParution=" + anneePremiereParution
-				+ "]";
+		return "Livre [titre=" + titre + ", auteur=" + auteur + ", anneePremiereParution=" + anneePremiereParution+ "]";
 	}
 	
 }
