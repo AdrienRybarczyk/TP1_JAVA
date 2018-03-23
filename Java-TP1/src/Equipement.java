@@ -1,15 +1,17 @@
 
-public class Pouvoir_Magique {
+public class Equipement {
 	private String nom;
 	private String description;
+	private int resistance;
 	/**
 	 * constructor
 	 * @param nom
 	 * @param description
 	 */
-	public Pouvoir_Magique(String nom, String description) {
+	public Equipement(String nom, String description, int resistance) {
 		this.nom = nom;
 		this.description = description;
+		this.resistance = resistance;
 	}
 	/**
 	 * @return the nom
@@ -35,11 +37,23 @@ public class Pouvoir_Magique {
 	public void setDescription(String description) {
 		this.description = description;
 	}
+	/**
+	 * @return the resistance
+	 */
+	public int getResistance() {
+		return resistance;
+	}
+	/**
+	 * @param resistance the resistance to set
+	 */
+	public void setResistance(int resistance) {
+		this.resistance = resistance;
+	}
 
 	@Override
 	public String toString() {
-		return "Pouvoir_Magique\n name: " + nom + "\n description: " + description;
+		return "Equipement\n name: " + nom + "\n description: " + description + "\n resistance: " + resistance;
 	}
-	
-	
+
+
 }
